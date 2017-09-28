@@ -4,3 +4,5 @@ puts house.keys
 
 puts house.first.class
 puts house['meta'].class
+
+puts house['objects'].each.count { |k, v|  k.include?('representative_set_name') }
