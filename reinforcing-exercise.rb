@@ -6,3 +6,5 @@ puts house.first.class
 puts house['meta'].class
 
 puts house['objects'].each.count { |k, v|  k.include?('representative_set_name') }
+
+puts house['objects'][0].fetch('photo_url')
